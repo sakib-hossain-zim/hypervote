@@ -1,8 +1,0 @@
-{
-  "$class": "org.acme.biznet.Commodity",
-  "tradingSymbol": "string",
-  "description": "string",
-  "mainExchange": "string",
-  "quantity": 0,
-  "owner": {}
-}
