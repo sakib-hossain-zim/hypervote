@@ -5,8 +5,8 @@
   "scripts": {
     "test": "mocha --recursive"
   },
-  "author": "Ludzi Bokete",
-  "email": "lboketee@gmail.com",
+  "author": "Ludzi Bokete, Hudhaifah Zahid",
+  "email": "lboketee@gmail.com, hudhaifahz@gmail.com",
   "license": "Apache-2.0",
   "devDependencies": {
     "composer-admin": "latest",
