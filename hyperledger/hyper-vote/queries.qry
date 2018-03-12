@@ -1,0 +1,29 @@
+/** Sample queries for hyper-vote business network
+*/
+
+query selectVotes {
+  description: "Select all votes"
+  statement:
+      SELECT org.acme.sample.Share
+}
+
+query selectShareByCompany {
+  description: "Select all Shares based on their company"
+  statement:
+      SELECT org.acme.sample.Share
+          WHERE (company==_$company)
+}
+
+query selectShareByOwner {
+  description: "Select all shares based on their owner"
+  statement:
+      SELECT org.acme.sample.Share
+          WHERE (owner == _$owner)
+}
+
+query selectShareByShareId {
+  description: "Select all shares based on their share Id"
+  statement:
+      SELECT org.acme.sample.Share
+          WHERE (shareId == _$shareId)
+}
