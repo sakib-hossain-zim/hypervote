@@ -24,10 +24,10 @@ Avoid installing node globally as root.<br>
 
 ### UBUNTU
 https://hyperledger.github.io/composer/installing/installing-prereqs.html#ubuntu<br>
-**Note: As of Apr 3, 2018 - Ubuntu 17+ is not supported yet.**
-`<addr>`$ curl -O https://hyperledger.github.io/composer/prereqs-ubuntu.sh
-$ chmod u+x prereqs-ubuntu.sh
-$ ./prereqs-ubuntu.sh
+**Note: As of Apr 3, 2018 - Ubuntu 17+ is not supported yet.**<br>
+```$ curl -O https://hyperledger.github.io/composer/prereqs-ubuntu.sh```<br>
+```$ chmod u+x prereqs-ubuntu.sh```<br>
+```$ ./prereqs-ubuntu.sh```<br>
 
 ### MAC
 https://hyperledger.github.io/composer/installing/installing-prereqs.html#macos<br>
