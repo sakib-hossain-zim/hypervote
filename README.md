@@ -1,4 +1,4 @@
-Prerequisites:
+#Prerequisites:
 
 To run Hyperledger Composer and Hyperledger Fabric, we recommend you have at least 4Gb of memory.
 
@@ -21,12 +21,14 @@ Run prereqs-ubuntu.sh as a normal user. It may prompt for root password as some 
 Do not use npm with sudo or su to root to use it.
 Avoid installing node globally as root.**
 
-UBUNTU
+##UBUNTU
 https://hyperledger.github.io/composer/installing/installing-prereqs.html#ubuntu
 
 $ curl -O https://hyperledger.github.io/composer/prereqs-ubuntu.sh
 $ chmod u+x prereqs-ubuntu.sh
 $ ./prereqs-ubuntu.sh
 
-MAC
+##MAC
 https://hyperledger.github.io/composer/installing/installing-prereqs.html#macos
+
+#Installation
