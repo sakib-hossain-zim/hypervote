@@ -23,15 +23,36 @@ Do not use npm with sudo or su to root to use it.<br>
 Avoid installing node globally as root.<br>
 
 ### UBUNTU
-https://hyperledger.github.io/composer/installing/installing-prereqs.html#ubuntu<br>
+
+A prerequisite one-step install package is available for Ubuntu.
+Instructions are as at https://hyperledger.github.io/composer/installing/installing-prereqs.html#ubuntu<br>
+
 **Note: As of Apr 3, 2018 - Ubuntu 17+ is not supported yet.**<br>
 ```$ curl -O https://hyperledger.github.io/composer/prereqs-ubuntu.sh```<br>
 ```$ chmod u+x prereqs-ubuntu.sh```<br>
 ```$ ./prereqs-ubuntu.sh```<br>
 
 ### MAC
-https://hyperledger.github.io/composer/installing/installing-prereqs.html#macos<br>
 
-https://download.docker.com/mac/stable/Docker.dmg
+No one-step install packages are available for Mac.
+Detailed instructions are at https://hyperledger.github.io/composer/installing/installing-prereqs.html#macos<br>
+
+Software primarily needed:
+* XCode (most programmers will already have this - requires 30-60 min for first install)
+* Node (latest preferred - instructions use nvm to install)
+* Docker (https://download.docker.com/mac/stable/Docker.dmg)
 
 # Installation
+
+Once the prerequisites are installed, we can move towards setting up 1) Hyperledger and 2) HyperVote.<br>
+HyperVote is best envisioned as a Business Network app deployed on the Hyperledger framework.<br>
+Scripts for both steps on Ubuntu and Mac are available.<br>
+
+Hyperledger for MAC: <br>
+HyperVote for MAC: <br>
+Hyperledger for UBUNTU: <br>
+HyperVote for UBUNTU: <br>
+
+### UBUNTU
+
+### MAC
