@@ -16,4 +16,3 @@ tar -xvf fabric-dev-servers.tar.gz
 echo To start the web app \(Playground\), run: $ composer-playground
 echo It should be accessible at http://localhost:8080/login
 echo The main hyper-vote code for development and testing can be found at hypervote/hyper-vote
-echo starting hyper-vote network launch...

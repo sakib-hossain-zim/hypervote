@@ -98,22 +98,21 @@ chmod u+x hyperLaunch.sh
 
 # Errors
 
-### Composer-CLI Version Issue (hyper-vote)
+### Composer-CLI Version Unable to Read (hyper-vote)
 
-Arises when trying to launch Business Network after installing Hyperledger at step:<br>
+April 3, 2018<br>
+This is a composer-cli version issue that arises when trying to launch Business Network after installing Hyperledger at step:<br>
 ```
-composer network install --card PeerAdmin@hlfv1 --archiveFile hyper-vote@0.0.1.bna
+./createPeerAdminCard
 ```
-of ./hyperLaunch.command or ./hyperLaunch.sh resulting in e.g. Error: Unable to read required file: metadata.json
+of ./hyperInstall.command or ./hyperInstall.sh resulting in e.g. Error: Unable to read required file: metadata.json mainly experienced on a MAC that had previously installed Hyperledger.
 
 Solution:<br>
 ```
-npm remove -g composer-cli
 npm install -g composer-cli@0.16.0
 composer card list
 compser card delete -n <card name, e.g. PeerAdmin@hlfv1>
-npm remove -g composer-cli
-npm install -g composer-cli
+OPTIONAL: npm install -g composer-cli
 cd hypervote/fabric-tools/
 ./createPeerAdminCard
 ```
