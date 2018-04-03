@@ -28,9 +28,9 @@ A prerequisite one-step install package is available for Ubuntu.
 Instructions are as at https://hyperledger.github.io/composer/installing/installing-prereqs.html#ubuntu<br>
 
 **Note: As of Apr 3, 2018 - Ubuntu 17+ is not supported yet.**<br>
-```$ curl -O https://hyperledger.github.io/composer/prereqs-ubuntu.sh```<br>
-```$ chmod u+x prereqs-ubuntu.sh```<br>
-```$ ./prereqs-ubuntu.sh```<br>
+```curl -O https://hyperledger.github.io/composer/latest/prereqs-ubuntu.sh```<br>
+```chmod u+x prereqs-ubuntu.sh```<br>
+```./prereqs-ubuntu.sh```<br>
 
 ### MAC
 
