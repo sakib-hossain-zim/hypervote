@@ -1,6 +1,6 @@
 # Prerequisites:
 
-To run Hyperledger Composer and Hyperledger Fabric, we recommend you have at least 4Gb of memory.
+To run Hyperledger Composer and Hyperledger Fabric, we recommend you have at least 4Gb of memory. The machine may need to be restarted during this process or you may be asked to log out and log back in once all prerequisites are installed.
 
 The following are prerequisites for installing the required development tools:
 
