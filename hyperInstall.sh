@@ -1,4 +1,7 @@
 # /bin/bash
+docker kill $(docker ps -q)
+docker rm $(docker ps -aq)
+docker rmi $(docker images dev-* -q)
 npm install -g composer-cli
 npm install -g composer-rest-server
 npm install -g generator-hyperledger-composer
