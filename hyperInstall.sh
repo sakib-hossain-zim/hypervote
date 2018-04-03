@@ -11,4 +11,5 @@ tar -xvf fabric-dev-servers.tar.gz
 ./startFabric.sh
 ./createPeerAdminCard.sh
 echo To start the web app \(Playground\), run: $ composer-playground
-echo It should be accessible at 
+echo It should be accessible at http://localhost:8080/login
+echo The main hyper-vote code for development and testing can be found at hypervote/hyper-vote
