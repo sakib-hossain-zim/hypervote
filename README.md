@@ -111,8 +111,8 @@ Solution:<br>
 ```
 npm install -g composer-cli@0.16.0
 composer card list
-compser card delete -n <card name, e.g. PeerAdmin@hlfv1>
-OPTIONAL: npm install -g composer-cli
+compser card delete -n <card name, e.g. PeerAdmin@hlfv1> #delete ALL cards
+npm install -g composer-cli
 cd hypervote/fabric-tools/
 ./createPeerAdminCard
 ```
