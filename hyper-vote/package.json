@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "HyperVote Business Network, created 24/02/18 11:21pm",
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "mocha --recursive --timeout 100000"
   },
   "author": "Ludzi Bokete, Hudhaifah Zahid",
   "email": "lboketee@gmail.com, hudhaifahz@gmail.com",
   "license": "Apache-2.0",
   "devDependencies": {
+    "async": "latest",
     "composer-admin": "latest",
     "composer-client": "latest",
     "composer-common": "latest",
