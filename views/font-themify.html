@@ -48,6 +48,78 @@
         
     }
 
+        // HYPERVOTE POST
+        function postVoteHV() {
+        console.log('POSTING A VOTE - HYPERVOTE')
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "http://localhost:3000/api/MakeVote", true);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.send(JSON.stringify(
+            {
+                "$class": "org.acme.sample.MakeVote",
+                "share": "hypervote",
+                "newVoteDecision": "1",
+                "timestamp": "2018-04-28T21:50:11.615Z"
+            })
+        );
+        // var response = JSON.parse(xhttp.responseText);
+        
+    }
+
+        // MICROSOFT VOTE
+        function postVoteMS() {
+        console.log('POSTING A VOTE - MICROSOFT')
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "http://localhost:3000/api/MakeVote", true);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.send(JSON.stringify(
+            {
+                "$class": "org.acme.sample.MakeVote",
+                "share": "microsoft",
+                "newVoteDecision": "1",
+                "timestamp": "2018-04-28T21:50:11.615Z"
+            })
+        );
+        // var response = JSON.parse(xhttp.responseText);
+        
+    }
+
+        // HOOTSUITE VOTE
+        function postVoteHS() {
+        console.log('POSTING A VOTE - HOOT SUITE')
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "http://localhost:3000/api/MakeVote", true);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.send(JSON.stringify(
+            {
+                "$class": "org.acme.sample.MakeVote",
+                "share": "hootsuite",
+                "newVoteDecision": "1",
+                "timestamp": "2018-04-28T21:50:11.615Z"
+            })
+        );
+        // var response = JSON.parse(xhttp.responseText);
+        
+    }
+
+        // BUILD DIRECT VOTE
+        function postVoteBD() {
+        console.log('POSTING A VOTE - BUILD DIRECT')
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "http://localhost:3000/api/MakeVote", true);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.send(JSON.stringify(
+            {
+                "$class": "org.acme.sample.MakeVote",
+                "share": "builddirect",
+                "newVoteDecision": "1",
+                "timestamp": "2018-04-28T21:50:11.615Z"
+            })
+        );
+        // var response = JSON.parse(xhttp.responseText);
+        
+    }
+
 </script>
 
 <body>
@@ -137,6 +209,7 @@
 
         <!-- Header-->
         <header id="header" class="header">
+
 
             <div class="header-menu">
 
@@ -245,33 +318,130 @@
 
         </header>
 
-        <div class="content mt-3">
-            <a href="font-fontawesome.html">
-                <button class="btn-info btn-lg">
-                        <i class="fa fa-arrow-left"></i>
-                </button>
-            </a>
+        <!-- navbar -->
 
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <a style="float: left; padding: 10px; padding-left: 0px;" href="font-fontawesome.html">
+                            <button class="btn-secondary btn-lg">
+                                    <i class="fa fa-arrow-left"></i>
+                            </button>
+                        </a>
+                        <h1 style="width: 500px; padding-top:23px;">BC TECH SUMMIT VOTE</h1>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- API BUTTON -->
         <div class="content mt-3">
-            <button class="btn-success" style="width: 300px; height: 70px" type="submit" onclick="postVoteHV()">HyperVote</button>
+            <button class="btn-success" style="width: 300px; height: 70px" type="submit" data-toggle="modal" data-target="#hypervoteModal">HyperVote</button>
         </div>
 
         <div class="content mt-3">
-            <button class="btn-success" style="width: 300px; height: 70px" type="submit" onclick="postVoteMS()">Microsoft</button>
+            <button class="btn-success" style="width: 300px; height: 70px" type="submit" data-toggle="modal" data-target="#microsoftModal">Microsoft</button>
         </div>
 
         <div class="content mt-3">
-            <button class="btn-success" style="width: 300px; height: 70px" type="submit" onclick="postVoteHS()">HootSuite</button>
+            <button class="btn-success" style="width: 300px; height: 70px" type="submit" data-toggle="modal" data-target="#hootsuiteModal">HootSuite</button>
         </div>
 
         <div class="content mt-3">
-            <button class="btn-success" style="width: 300px; height: 70px" type="submit" onclick="postVoteBD()">Build Direct</button>
+            <button class="btn-success" style="width: 300px; height: 70px" type="submit" data-toggle="modal" data-target="#builddirectModal">Build Direct</button>
         </div>
 
     </div><!-- /#right-panel -->
+
+
+
+    <!-- MODALS -->
+
+    <!-- Modal FOR HYPERVOTE-->
+    <div class="modal fade" id="hypervoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">HyperVote</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Vote HyperVote as your favourite start up
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-primary" onclick="postVoteHV()">Confirm Vote</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal FOR MICROSOFT-->
+    <div class="modal fade" id="microsoftModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Microsoft</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Vote Microsoft as your favourite start up
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-primary" onclick="postVoteMS()">Confirm Vote</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal FOR HOOTSUITE-->
+    <div class="modal fade" id="hootsuiteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hoot Suite</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Vote Hoot Suite as your favourite start up
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-primary" onclick="postVoteHS()">Confirm Vote</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal FOR BUILD DIRECT-->
+    <div class="modal fade" id="builddirectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Build Direct</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Vote Build Direct as your favourite start up
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-primary" onclick="postVoteBD()">Confirm Vote</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- Right Panel -->
 
