@@ -329,27 +329,103 @@
                                     <i class="fa fa-arrow-left"></i>
                             </button>
                         </a>
-                        <h1 style="width: 500px; padding-top:23px;">BC TECH SUMMIT VOTE</h1>
+                        <h1 style="width: 500px; padding-top:23px;">Return</h1>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- API BUTTON -->
-        <div class="content mt-3">
-            <button class="btn-success" style="width: 300px; height: 70px" type="submit" data-toggle="modal" data-target="#hypervoteModal">HyperVote</button>
+        <!-- JUMBOTRON -->
+
+        <div class="jumbotron" style="padding-bottom: 20px; padding-top: 20px;">
+            <h1 class="display-4">BC TECH SUMMIT</h1>
+            <hr class="my-4">
+            <h6>Description: People's choice award for best company at the 2018 BC Tech Summit, using blockchain voting.</h6>
+            <br>
+            <p>Voting Date: May 16, 2018</p>
+            <p>Voting Time: 12:00PM - 11:59PM</p>
         </div>
 
-        <div class="content mt-3">
-            <button class="btn-success" style="width: 300px; height: 70px" type="submit" data-toggle="modal" data-target="#microsoftModal">Microsoft</button>
-        </div>
+        <!-- DESCRIPTION -->
+        <div id="accordion">
 
-        <div class="content mt-3">
-            <button class="btn-success" style="width: 300px; height: 70px" type="submit" data-toggle="modal" data-target="#hootsuiteModal">HootSuite</button>
-        </div>
+            <!-- MICROSOFT -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Microsoft
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                        Microsoft Corporation is an American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports and sells computer software, consumer electronics, personal computers, and services. Its best known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers. Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup of touchscreen personal computers. As of 2016, it is the world's largest software maker by revenue, and one of the world's most valuable companies. The word "Microsoft" is a portmanteau of "microcomputer" and "software".
+                    <div class="content mt-3" style="margin-bottom: 20px;">
+                        <button class="btn-success" style="width: 200px; height: 50px; float: right;" type="submit" data-toggle="modal" data-target="#microsoftModal">Vote</button>
+                    </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="content mt-3">
-            <button class="btn-success" style="width: 300px; height: 70px" type="submit" data-toggle="modal" data-target="#builddirectModal">Build Direct</button>
+            <!-- HYPERVOTE -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    HyperVote
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    HyperVote is an online blockchain start up, aimed at reducing corruption and improving transparency in elections. Based in Vancouver Canada, HyperVote uses a permissioned blockchain, allowing for greater controll and security.
+                    <div class="content mt-3" style="margin-bottom: 20px;">
+                        <button class="btn-success" style="width: 200px; height: 50px; float: right;" type="submit" data-toggle="modal" data-target="#hypervoteModal">Vote</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- HOOTSUITE -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Hoot Suite
+                    </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        HyperVote is an online blockchain start up, aimed at reducing corruption and improving transparency in elections. Based in Vancouver Canada, HyperVote uses a permissioned blockchain, allowing for greater controll and security.
+                        <div class="content mt-3" style="margin-bottom: 20px;">
+                            <button class="btn-success" style="width: 200px; height: 50px; float: right;" type="submit" data-toggle="modal" data-target="#hootsuiteModal">Vote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUILDDIRECT -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Build Direct
+                    </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        HyperVote is an online blockchain start up, aimed at reducing corruption and improving transparency in elections. Based in Vancouver Canada, HyperVote uses a permissioned blockchain, allowing for greater controll and security.
+                        <div class="content mt-3" style="margin-bottom: 20px;">
+                            <button class="btn-success" style="width: 200px; height: 50px; float: right;" type="submit" data-toggle="modal" data-target="#builddirectModal">Vote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div><!-- /#right-panel -->
@@ -372,8 +448,8 @@
                 Vote HyperVote as your favourite start up
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="#"><button type="button" class="btn btn-primary" onclick="postVoteHV()">Confirm Vote</button></a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-success" onclick="postVoteHV()">Confirm Vote</button></a>
             </div>
             </div>
         </div>
@@ -393,8 +469,8 @@
                 Vote Microsoft as your favourite start up
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="#"><button type="button" class="btn btn-primary" onclick="postVoteMS()">Confirm Vote</button></a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-success" onclick="postVoteMS()">Confirm Vote</button></a>
             </div>
             </div>
         </div>
@@ -414,8 +490,8 @@
                 Vote Hoot Suite as your favourite start up
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="#"><button type="button" class="btn btn-primary" onclick="postVoteHS()">Confirm Vote</button></a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-success" onclick="postVoteHS()">Confirm Vote</button></a>
             </div>
             </div>
         </div>
@@ -435,8 +511,8 @@
                 Vote Build Direct as your favourite start up
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="#"><button type="button" class="btn btn-primary" onclick="postVoteBD()">Confirm Vote</button></a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-success" onclick="postVoteBD()">Confirm Vote</button></a>
             </div>
             </div>
         </div>
