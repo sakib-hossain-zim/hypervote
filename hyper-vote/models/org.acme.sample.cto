@@ -9,7 +9,7 @@ asset Share identified by shareId {
     o String company 
     o String votedecision 
     o Double sharequantity // TODO: Model 1 < shares? 
-    --> Shareholder owner
+    --> Shareholder owner optional
     --> Institution issuer
     
 }
